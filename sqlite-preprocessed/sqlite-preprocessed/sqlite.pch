@@ -1,0 +1,23 @@
+//
+//  sqlite.pch
+//  sqlite-preprocessed
+//
+//  Created by v on 2020/8/29.
+//  Copyright © 2020 sqlite. All rights reserved.
+//
+
+#ifndef sqlite_pch
+#define sqlite_pch
+
+#import <string.h>
+
+#if DEBUG
+    #import <assert.h>
+    #define SQLITE_DEBUG    1
+#else
+    #define assert(__VA_ARGS__)
+#endif
+
+#import "sqlite-umbrella.h"
+
+#endif /* sqlite_pch */

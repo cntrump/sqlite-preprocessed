@@ -1,0 +1,6 @@
+framework module sqlite3 [system][extern_c] {
+    umbrella header "sqlite-umbrella.h"
+
+    export *
+    module * { export * }
+}
